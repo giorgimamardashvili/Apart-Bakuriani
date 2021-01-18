@@ -1,0 +1,85 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__form {
+    width: 632px;
+    border-radius: 4px;
+
+    @include rwd(1024) {
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    background: #3c3c3c no-repeat center center;
+    background-image: url(../assets/img/icons/Group1.svg);
+    height: 118px;
+  }
+  &__container {
+    padding: 30px 16px 16px 16px;
+    background: #f8f8f8;
+
+    input {
+      width: 100%;
+      height: 48px;
+      border-radius: 4px;
+      background: #fff;
+      padding: 14.5px 20px;
+      border: none;
+      margin-bottom: 16px;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    span {
+      font-size: 24px;
+      color: #3c3c3c;
+      margin-bottom: 16px;
+
+      &:first-child {
+        font-family: "bpg-bold";
+        font-size: 32px;
+        color: #3c3c3c;
+      }
+    }
+  }
+
+  &__button1 {
+    width: 100%;
+    height: 48px;
+    background: #6fdf6a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: 40px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &__button2 {
+    @extend .modal__button1;
+    background: #3c3c3c;
+    display: none;
+
+    @include rwd(1024) {
+      display: flex;
+      margin-top: 15px;
+    }
+  }
+}

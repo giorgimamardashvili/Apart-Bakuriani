@@ -1,0 +1,284 @@
+.appartment h2 {
+  font-family: "bpg-bold";
+  font-size: 48px;
+  text-align: center;
+  color: #3c3c3c;
+  margin-top: 96px;
+}
+
+.appartment h2::after {
+  content: "";
+  width: 200px;
+  height: 8px;
+  background: #80c0f0;
+  display: block;
+  margin: auto;
+}
+
+.appartment__swiper {
+  background: #f8f8f8;
+  height: 308px;
+  padding: 50px 0;
+}
+
+.appartment__container {
+  height: 100%;
+}
+
+.appartment__details {
+  padding-top: 32px;
+}
+
+.appartment__wrapper {
+  height: 530px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.choose {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.choose__item {
+  width: 24%;
+  height: 44px;
+  border-radius: 4px 4px 0px 0px;
+  background: #cbe4f7;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.choose__item:hover {
+  background: #80c0f0;
+}
+
+.container-swipe {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.container-swipe__wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.container-swipe__slide {
+  width: 308px;
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container-swipe__slide img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.size {
+  display: flex;
+}
+
+.size img {
+  position: static;
+  margin-right: 7px;
+}
+
+.opacity {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  opacity: 0.2;
+}
+
+.left {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 10px;
+  top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.right {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  right: 10px;
+  top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sold {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sold span {
+  font-family: "bpg-extrasquare";
+  font-size: 16px;
+  color: #f08080;
+}
+
+.gallery {
+  width: 49.75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gallery__top {
+  height: 77%;
+  overflow: hidden;
+}
+
+.gallery__top img {
+  max-width: 632px;
+  height: 400px;
+}
+
+.gallery__thumbs {
+  height: 20%;
+  position: relative;
+}
+
+.gallery__wrapper {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.gallery__slide {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__slide2 {
+  opacity: 0.25;
+  margin: 0;
+  width: 32% !important;
+  margin: 0 !important;
+}
+
+.gallery__slide2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.right-btn {
+  position: absolute;
+  right: 0;
+  top: 40%;
+}
+
+.left-btn {
+  position: absolute;
+  left: 0;
+  top: 40%;
+}
+
+.review {
+  width: 49.75%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review__top {
+  width: 100%;
+  display: flex;
+  padding: 42px 45px;
+  justify-content: space-between;
+}
+
+.review__item {
+  display: flex;
+}
+
+.review__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.review__text span:first-child {
+  font-size: 18px;
+}
+
+.review__text span:last-child {
+  color: #cbcbcb;
+}
+
+.review__center {
+  width: 100%;
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 51%;
+  justify-content: space-between;
+}
+
+.review__info {
+  padding: 10px 0;
+  width: 50%;
+}
+
+.review__info span {
+  margin-left: 32px;
+}
+
+.review__bottom {
+  width: 100%;
+  padding: 26px 32px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+}
+
+.review__price span {
+  font-family: "FiraGO-Bold";
+  font-size: 48px;
+  color: #80c0f0;
+}
+
+.review__price span sup {
+  font-family: "FiraGO-Regular";
+  font-size: 18px;
+  color: black;
+}
+
+.swiper-slide-thumb-active {
+  opacity: 1;
+}
+/*# sourceMappingURL=appartment.css.map */

@@ -1,0 +1,86 @@
+.about-us {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    @include m {
+      flex-direction: column;
+    }
+  }
+  &__text {
+    width: 40%;
+
+    @include m {
+      width: 100%;
+    }
+    p {
+      font-family: FiraGO-Regular;
+      text-align: left;
+      color: #3c3c3c;
+
+      &:first-child {
+        font-family: FiraGO-Bold;
+      }
+    }
+  }
+  &__imgs {
+    width: 58%;
+    background: transparent;
+    display: flex;
+
+    @include m {
+      width: 100%;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  &__img1 {
+    width: calc(41600% / 740);
+    object-fit: none;
+    object-position: top;
+    margin-right: 16px;
+
+    @include sm {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__img2 {
+    width: 100%;
+  }
+
+  &__img3 {
+    width: 66%;
+  }
+
+  h2 {
+    font-family: "bpg-bold";
+    font-size: 48px;
+    text-align: center;
+    color: #3c3c3c;
+    margin-top: 96px;
+
+    @include xl {
+      font-size: calc(28px + (48 - 28) * ((100vw - 375px) / (1310 - 375)));
+    }
+
+    &::after {
+      content: "";
+      width: 200px;
+      height: 8px;
+      background: #83e87e;
+      display: block;
+      margin: auto;
+    }
+  }
+}

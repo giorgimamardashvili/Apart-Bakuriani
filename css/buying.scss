@@ -1,0 +1,163 @@
+.buying {
+  h2 {
+    font-family: "bpg-bold";
+    font-size: 48px;
+    text-align: center;
+    color: #3c3c3c;
+    margin-top: 96px;
+
+    &::after {
+      content: "";
+      width: 200px;
+      height: 8px;
+      background: #80c0f0;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  &__banks {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+
+    img {
+      @include rwd(650) {
+        width: 49%;
+      }
+    }
+  }
+  &__types {
+    margin-top: 48px;
+    display: flex;
+    justify-content: flex-start;
+    div {
+      width: 24%;
+      height: 44px;
+      border-radius: 4px 4px 0px 0px;
+      background: #cbe4f7;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      cursor: pointer;
+      margin-right: 16px;
+
+      @include rwd(650) {
+        width: 48%;
+      }
+
+      &:hover {
+        background: #80c0f0;
+      }
+    }
+  }
+
+  &__info {
+    background: #f8f8f8;
+    padding: 65px 0;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @include rwd(650) {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include rwd(650) {
+      width: 100%;
+    }
+
+    h3 {
+      font-family: "bpg-bold";
+      font-size: 24px;
+      color: #3c3c3c;
+
+      @include xl {
+        font-size: calc(20px + (24 - 20) * ((100vw - 375px) / (1310 - 375)));
+      }
+    }
+
+    span {
+      line-height: 40px;
+    }
+  }
+
+  &__form {
+    width: 48%;
+
+    @include rwd(650) {
+      width: 100%;
+      margin-top: 35px;
+    }
+  }
+
+  &__adv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    @include sm {
+      flex-direction: column;
+    }
+
+    img {
+      width: 49.35%;
+      height: auto;
+
+      @include sm {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.form {
+  span {
+    color: #000;
+  }
+  button {
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    background: #6fdf6a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    border: none;
+    outline: none;
+    color: #fff;
+  }
+  &__inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    input {
+      width: 48.7%;
+      height: 48px;
+      border-radius: 4px;
+      background: #fff;
+      border: none;
+      padding-left: 20px;
+    }
+  }
+}

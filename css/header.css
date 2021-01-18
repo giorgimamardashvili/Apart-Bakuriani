@@ -1,0 +1,189 @@
+.header {
+  width: 100%;
+  height: calc(100vw / 2.09);
+  background: url(../assets/img/97039980_100978648296242_8051178455645028352_o.jpg) center center/cover no-repeat;
+  position: relative;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 75px;
+}
+
+.header__bottom {
+  width: 50%;
+  height: calc(100% - 75px);
+  position: relative;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  justify-content: space-between;
+  padding-top: 22vh;
+}
+
+.header__half {
+  width: 50%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.top-header__main {
+  background: url(../assets/img/icons/Group1.svg) center left no-repeat;
+  width: 263px;
+  height: 70px;
+  background-size: contain;
+}
+
+.top-header__nav {
+  width: 710px;
+  margin: 0 10px;
+}
+
+.top-header__nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-header__nav ul li {
+  list-style-type: none;
+  position: relative;
+}
+
+.top-header__nav ul li:hover:after {
+  content: "";
+  height: 8px;
+  background: #83e87e;
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  animation-name: changeWidth;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes changeWidth {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.top-header__nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-header__icons {
+  display: flex;
+  align-items: center;
+}
+
+.top-header__icons a {
+  margin-right: 49px;
+}
+
+.top-header__icons span {
+  width: 60px;
+  height: 32px;
+  background: transparent;
+  border: 2.5px solid #fff;
+  border-radius: 2px;
+  padding: 4px 12px;
+  color: #fff;
+  font-family: "FiraGO-Bold";
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.main-imgs {
+  position: relative;
+}
+
+.main-imgs__two {
+  position: absolute;
+  left: 60px;
+  top: 4px;
+}
+
+.buying-info__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buying-info__text span {
+  font-family: "bpg-bold";
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: left;
+  color: #fff;
+}
+
+.buying-info__where {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.buying-info__where img {
+  margin-right: 15px;
+}
+
+.buying-info__where span {
+  color: #fff;
+}
+
+.buying-info__remont {
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+}
+
+.buying-info__remont img {
+  margin-right: 15px;
+}
+
+.buying-info__remont span {
+  color: #fff;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.contact__info div {
+  display: flex;
+  align-items: center;
+}
+
+.contact__info div:not(:first-child) {
+  margin-top: 15px;
+}
+
+.contact__info img {
+  margin-right: 15px;
+}
+
+.contact__info span {
+  color: #fff;
+}
+
+.half {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+}
+/*# sourceMappingURL=header.css.map */

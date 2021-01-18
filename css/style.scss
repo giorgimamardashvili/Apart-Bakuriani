@@ -1,0 +1,77 @@
+@import "vars";
+@import "fonts";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "FiraGO-Regular", sans-serif;
+  font-size: 16px;
+
+  @include xl {
+    font-size: calc(13px + (16 - 13) * ((100vw - 375px) / (1310 - 375)));
+  }
+}
+
+.container {
+  max-width: 1310px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.contact-btns {
+  position: fixed;
+  bottom: 32px;
+  right: calc((100vw - 1280px) / 2);
+  z-index: 5;
+
+  @media screen and (max-width: 1310px) {
+    right: 15px;
+  }
+  div,
+  a {
+    display: block;
+    width: 72px;
+    height: 72px;
+    background: #83e87e;
+    opacity: 0.85;
+    border-radius: 50%;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 21px;
+      left: 21px;
+    }
+  }
+  div {
+    background: #80c0f0;
+    margin-top: 15px;
+  }
+}
+
+@import "header";
+@import "about-us";
+@import "confort";
+@import "appartment";
+@import "buying";
+@import "location";
+@import "footer";
+@import "modal";
+@import "burger-menu";
+
+.hide {
+  display: none;
+}
+
+.active {
+  background: #80c0f0;
+}
+
+.active-shadow {
+  border: 2px solid #cbe4f7;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+}

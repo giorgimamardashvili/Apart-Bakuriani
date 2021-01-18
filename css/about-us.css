@@ -1,0 +1,67 @@
+.about-us__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.about-us__text {
+  width: 40%;
+}
+
+.about-us__text p {
+  font-family: FiraGO-Regular;
+  text-align: left;
+  color: #3c3c3c;
+}
+
+.about-us__text p:first-child {
+  font-family: FiraGO-Bold;
+}
+
+.about-us__imgs {
+  width: 58%;
+  height: 524px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about-us__img1 {
+  width: 416px;
+  height: 416px;
+  background-image: url(../assets/img/105009098_2747839448878310_3064135163954687854_n.png);
+  background-size: cover;
+}
+
+.about-us__img2 {
+  width: 308px;
+  height: 308px;
+  background-image: url(../assets/img/104383045_1684893848331972_8189114528672312160_n.png);
+  background-size: cover;
+}
+
+.about-us__img3 {
+  width: 200px;
+  height: 200px;
+  background-image: url(../assets/img/104878671_266772467770274_6818057741381337329_n.png);
+  background-size: cover;
+}
+
+.about-us h2 {
+  font-family: "bpg-bold";
+  font-size: 48px;
+  text-align: center;
+  color: #3c3c3c;
+  margin-top: 96px;
+}
+
+.about-us h2::after {
+  content: "";
+  width: 200px;
+  height: 8px;
+  background: #83e87e;
+  display: block;
+  margin: auto;
+}
+/*# sourceMappingURL=about-us.css.map */
