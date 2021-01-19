@@ -1,6 +1,13 @@
-const button = document.getElementById("lang"),
-  langContainer = document.querySelector(".languages");
+const selected = document.querySelector(".selected"),
+  links = document.querySelectorAll(".languages a");
+console.log(links);
 
-button.addEventListener("click", () => {
-  langContainer.classList.toggle("flex");
-});
+function open(item) {
+  selected.addEventListener("click", () => {
+    links.forEach((item) => {
+      if (!item.contains(selected)) item.classList.toggle("hidden");
+    });
+  });
+}
+
+open(selected);

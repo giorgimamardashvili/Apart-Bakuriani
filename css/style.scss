@@ -10,6 +10,7 @@
 html {
   font-family: "FiraGO-Regular", sans-serif;
   font-size: 16px;
+  scroll-behavior: smooth;
 
   @include xl {
     font-size: calc(13px + (16 - 13) * ((100vw - 375px) / (1310 - 375)));

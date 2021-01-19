@@ -1,8 +1,8 @@
-var mySwiper = new Swiper(".swiper-container", {
+var mySwiper = new Swiper(".container-swipe", {
   // Optional parameters
 
   // loop: true,
-  slidesPerView: 'auto',
+  slidesPerView: "auto",
   spaceBetween: 16,
   observer: true,
   observeSlideChildren: true,
@@ -17,17 +17,16 @@ var mySwiper = new Swiper(".swiper-container", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // breakpoints: {
-  //   0: {
-  //     slidesPerView: 2,
-  //     spaceBetweenSlides: 10,
-  //   },
-  //   1025: {
-  //     slidesPerView: 'auto',
-  //     spaceBetween: 16,
-  //   }
-
-  // }
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+      spaceBetweenSlides: 10,
+    },
+    1025: {
+      slidesPerView: "auto",
+      spaceBetween: 16,
+    },
+  },
 
   // // And if we need scrollbar
   // scrollbar: {
