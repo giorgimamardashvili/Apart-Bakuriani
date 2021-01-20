@@ -132,9 +132,10 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    width: 70px;
 
-    @include rwd(400) {
-      position: static;
+    @include m2 {
+      justify-content: flex-end;
     }
   }
 
@@ -280,6 +281,11 @@
   right: 0;
   top: -18px;
   z-index: 11;
+
+  @include rwd(1024) {
+    right: 36px;
+    top: -10px;
+  }
 
   a {
     width: 60px;

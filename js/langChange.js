@@ -1,5 +1,6 @@
 const selected = document.querySelector(".selected"),
-  links = document.querySelectorAll(".languages a");
+  links = document.querySelectorAll(".languages a"),
+  lang = document.querySelector(".languages");
 console.log(links);
 
 function open(item) {
@@ -9,5 +10,7 @@ function open(item) {
     });
   });
 }
+
+
 
 open(selected);

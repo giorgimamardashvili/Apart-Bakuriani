@@ -229,11 +229,12 @@ html {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  width: 70px;
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 810px) {
   .top-header__options {
-    position: static;
+    justify-content: flex-end;
   }
 }
 
@@ -385,6 +386,13 @@ html {
   right: 0;
   top: -18px;
   z-index: 11;
+}
+
+@media (max-width: 1024px) {
+  .languages {
+    right: 36px;
+    top: -10px;
+  }
 }
 
 .languages a {
